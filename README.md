@@ -8,6 +8,8 @@ LocalSuperAgent is a Node.js application that implements an agent-based architec
 
 The system is powered by Ollama running locally, using the qwen3:1.7b model for all AI interactions.
 
+**Project Audio Overview (NotebookLM):** [Listen Here](https://notebooklm.google.com/notebook/5f3efa56-27d6-4324-bc11-62ca4e2c1da1/audio)
+
 ## Features
 
 - **SuperAgent Architecture**: A primary agent that analyzes the current state, plans next steps, and delegates tasks
@@ -19,14 +21,17 @@ The system is powered by Ollama running locally, using the qwen3:1.7b model for 
 
 ## System Requirements
 
-- Node.js (v18 or higher)
-- Ollama installed locally with the qwen3:1.7b model
+- **Node.js**: v18 or higher recommended.
+- **Git**: Required for cloning the repository.
+- **Ollama**: installed locally with the qwen3:1.7b model (or other)
 
 ## Setup Instructions
 
+## Detailed installation instructions in [INSTALLATION.md](https://github.com/peterbabulik/LocalSuperAgent/blob/master/INSTALLATION.md)
+
 ### 1. Install Ollama
 
-Follow the instructions at [Ollama's official website](https://ollama.ai/) to install Ollama on your system.
+Follow the instructions at [Ollama's official website](https://ollama.com/) to install Ollama on your system.
 
 ### 2. Pull the qwen3:1.7b model
 
@@ -37,7 +42,7 @@ ollama pull qwen3:1.7b
 ### 3. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/LocalSuperAgent.git
+git clone https://github.com/peterbabulik/LocalSuperAgent.git
 cd LocalSuperAgent
 ```
 
@@ -46,17 +51,6 @@ cd LocalSuperAgent
 ```bash
 npm install
 ```
-
-### 5. Configure environment variables
-
-Create a `.env` file in the root directory with the following content:
-
-```
-# Ollama configuration
-OLLAMA_API_URL=http://localhost:11434
-```
-
-You can modify the URL if your Ollama instance is running on a different host or port.
 
 ## Usage
 
