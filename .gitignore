@@ -1,0 +1,26 @@
+# Example .gitignore content
+
+# Logs and temporary files
+*.log
+*.swp
+
+# Dependency directories
+/node_modules
+/venv
+
+# Workspace / Generated content
+/project_workspace
+
+# Specific state/log files you want to ignore
+companion_log.jsonl 
+companion_state.json 
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Other common ignores if needed:
+# /build
+# /dist
+# *. DSYM/
